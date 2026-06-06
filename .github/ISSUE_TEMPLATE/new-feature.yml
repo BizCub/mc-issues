@@ -8,32 +8,65 @@ body:
       label: "Project"
       options:
         - "<SELECT A PROJECT>"
-        - "X Ray"
-        - "Auto Aim"
-        - "Saddle Backport"
-        - "Dream's Compass"
-        - "Keep Inventory Always"
-        - "Coords"
-        - "Timer for Speedrun"
-        - "Items Timer"
-        - "Death Locator"
-        - "More Xp More Health"
-        - "1 Hit"
         - "0,5 HP"
-        - "Name Tag Backport"
+        - "1 Hit"
+        - "All Mobs are Creepers"
+        - "Antigravity"
+        - "Auto Aim"
+        - "Better GUI"
+        - "Bizarre West"
+        - "Bugrock"
+        - "Bunny Hop"
+        - "Can't Go Down"
+        - "Can't Touch Water"
+        - "Chroma Key - Green Screen"
+        - "Coords"
         - "Death Coordinates"
-        - "Forgetful Sniffer"
-        - "Instant Respawn Always"
-        - "SUS Blocks"
+        - "Death Locator"
         - "Death Note"
+        - "Donkey Spawn Egg Meme"
+        - "Dream's Compass"
+        - "Dye Textures Backport"
+        - "Emerald Items"
+        - "Expansion of Border"
+        - "Fix Firefly Bush Framerate"
+        - "FNAF Dreams and Nightmares"
+        - "Forgetful Sniffer"
+        - "Ice Track"
+        - "Icons - Additions"
         - "Infinite Items"
-        - "Emerald Itemss"
+        - "Instant Respawn Always"
+        - "Items Timer"
+        - "Keep Inventory Always"
+        - "Low Contrast Resin"
+        - "Max Speed"
+        - "MineChess"
+        - "More Kills More Damage"
+        - "More Xp More Health"
+        - "More Xp More Size"
+        - "Name Tag Backport"
+        - "No Outline"
+        - "Pixelation"
+        - "PVP Arena"
+        - "Random Size"
+        - "RGB Water"
+        - "Rubiks Cube"
+        - "Saddle Backport"
+        - "SUS Blocks"
+        - "Timer for Speedrun"
+        - "X Ray"
+        - "Перевод Модов"
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
       label: Describe the feature
-      placeholder: A button in the screen X that allows to do Y
+      placeholder: I think we need to add new types of seeds that the sniffer can dig up
     validations:
       required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for adding
+      placeholder: Because that's what this project lacks and fits well with its theme
