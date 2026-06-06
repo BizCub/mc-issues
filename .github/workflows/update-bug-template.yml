@@ -1,0 +1,29 @@
+name: Update Issue Templates
+
+on:
+  push:
+    paths:
+      - '.github/scripts/projects.txt'
+
+jobs:
+  update-templates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run update script
+        run: python3 .github/scripts/update_bug_template.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Automated update of project list'
+          file_pattern: .github/ISSUE_TEMPLATE/bug-report.yml .github/ISSUE_TEMPLATE/new-feature.yml
+          commit_user_name: GitHub Actions
+          commit_user_email: actions@github.com
+          commit_author: BizCub <BizCub@users.noreply.github.com>

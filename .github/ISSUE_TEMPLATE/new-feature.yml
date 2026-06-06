@@ -1,0 +1,39 @@
+name: New feature
+description: Suggest or request a new feature
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: "Project"
+      options:
+        - "<SELECT A PROJECT>"
+        - "X Ray"
+        - "Auto Aim"
+        - "Saddle Backport"
+        - "Dream's Compass"
+        - "Keep Inventory Always"
+        - "Coords"
+        - "Timer for Speedrun"
+        - "Items Timer"
+        - "Death Locator"
+        - "More Xp More Health"
+        - "1 Hit"
+        - "0,5 HP"
+        - "Name Tag Backport"
+        - "Death Coordinates"
+        - "Forgetful Sniffer"
+        - "Instant Respawn Always"
+        - "SUS Blocks"
+        - "Death Note"
+        - "Infinite Items"
+        - "Emerald Itemss"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      placeholder: A button in the screen X that allows to do Y
+    validations:
+      required: true

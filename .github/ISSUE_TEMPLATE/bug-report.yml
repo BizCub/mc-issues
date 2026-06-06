@@ -1,0 +1,60 @@
+name: Bug Report
+description: Report a bug
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: "Project"
+      options:
+        - "<SELECT A PROJECT>"
+        - "X Ray"
+        - "Auto Aim"
+        - "Saddle Backport"
+        - "Dream's Compass"
+        - "Keep Inventory Always"
+        - "Coords"
+        - "Timer for Speedrun"
+        - "Items Timer"
+        - "Death Locator"
+        - "More Xp More Health"
+        - "1 Hit"
+        - "0,5 HP"
+        - "Name Tag Backport"
+        - "Death Coordinates"
+        - "Forgetful Sniffer"
+        - "Instant Respawn Always"
+        - "SUS Blocks"
+        - "Death Note"
+        - "Infinite Items"
+        - "Emerald Itemss"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Project version
+      placeholder: ex. 1.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your issue
+      placeholder: When I click here this happens
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Click here
+        2. Click there
+    validations:
+      required: true
+  - type: textarea
+    id: solve
+    attributes:
+      label: A way to solve the issue
+      placeholder: Something you could suggest to solve the issue
